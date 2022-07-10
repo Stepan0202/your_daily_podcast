@@ -1,0 +1,65 @@
+.header {
+  background-color: #F7EDE8;
+}
+
+.header__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 24px auto;
+}
+
+.logo-container {
+  flex: 0 0 auto;
+}
+
+.navigation {
+  flex: 10 1 315px;
+  margin-right: 5%;
+}
+
+.navigation__container {
+  display: flex;
+  min-width: 315px;
+  justify-content: flex-start;
+  gap: 19.0476190476%;
+  margin-left: 10.6034482759%;
+}
+
+.navigation__item {
+  display: flex;
+  align-items: center;
+}
+.navigation__item:last-child::after {
+  content: url(../img/icons/header__arrow.png);
+  position: relative;
+  left: 5.9701492537%;
+}
+
+.button__panel {
+  display: flex;
+  justify-content: flex-end;
+  flex: 8 1 auto;
+  gap: 1.724137931%;
+  background-color: inherit;
+  height: 100%;
+}
+
+.header__button {
+  border: 2px solid #000;
+  height: 41px;
+}
+
+.recent-episodes-button {
+  background-color: inherit;
+  flex: 29 1 auto;
+  max-width: 200px;
+  color: #000;
+  box-shadow: none;
+}
+
+.subscribe-button {
+  flex: 21 1 auto;
+  max-width: 200px;
+  padding: 0 24px;
+}
