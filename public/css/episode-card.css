@@ -1,0 +1,144 @@
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid black;
+  border-radius: 12px;
+  padding: 16px;
+  flex: 0 1 48.6%;
+  background-color: #fff;
+}
+.card:nth-child(4n+4), .card:nth-child(4n+1) {
+  box-shadow: 10px 10px #81ADC8;
+}
+
+@media (max-width: 885px) {
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 16px;
+    flex: 0 1 100%;
+    background-color: #fff;
+  }
+}
+.card__main {
+  display: flex;
+}
+
+.card__image {
+  border-radius: 8px;
+  overflow: hidden;
+  flex: 1 0 29%;
+  height: 100%;
+  margin-right: 5%;
+}
+
+.card__text {
+  color: #CD4631;
+  flex: 2 1 70%;
+  padding-top: 5%;
+}
+
+@media (max-width: 767px) {
+  .card__episode-num {
+    font-size: calc(11px + 8.5 * ((100vw - 320px) / 1160));
+  }
+}
+@media (min-width: 767px) {
+  .card__episode-num {
+    font-size: calc(11px + 5 * ((100vw - 320px) / 1160));
+  }
+}
+
+.card__header {
+  margin: 3% 0 7%;
+}
+@media (max-width: 767px) {
+  .card__header {
+    font-size: calc(1px + 36.805 * ((100vw - 320px) / 1160));
+  }
+}
+@media (min-width: 767px) {
+  .card__header {
+    font-size: calc(1px + 21.65 * ((100vw - 320px) / 1160));
+  }
+}
+
+.card__description {
+  color: #4D4D4D;
+  font-weight: 500;
+  line-height: 160%;
+  border-top: #4D4D4D 1px solid;
+  padding-top: 10px;
+  flex: 1 0 100%;
+}
+@media (max-width: 767px) {
+  .card__description {
+    font-size: calc(5px + 15.3 * ((100vw - 320px) / 1160));
+  }
+}
+@media (min-width: 767px) {
+  .card__description {
+    font-size: calc(5px + 9 * ((100vw - 320px) / 1160));
+  }
+}
+
+.card__footer {
+  display: flex;
+  flex: 1 0 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.card__tags {
+  font-size: 12px;
+  line-height: 160%;
+  font-weight: 500;
+  display: inline-flex;
+  gap: 2%;
+  flex: 3 1 fit-content;
+}
+
+.card__tag {
+  border-radius: 4px;
+  flex: 6 1 max-content;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding: 0 5%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: #4D4D4D 1px solid;
+}
+
+.card__participants {
+  display: flex;
+  font-size: 12px;
+  line-height: 160%;
+  flex: 1 1 auto;
+  margin-left: auto;
+  justify-content: center;
+}
+.card__participants p {
+  display: inline-block;
+  flex: 1 1 auto;
+  align-self: center;
+  text-align: right;
+  margin-right: 10px;
+}
+.card__participants img {
+  border-radius: 50%;
+  display: block;
+}
+.card__participants img:nth-child(n+3) {
+  margin-left: -5%;
+  border: 2px solid #fff;
+}
+
+.episodes-list__button {
+  margin: 0 auto;
+  padding: 20px 3%;
+}
