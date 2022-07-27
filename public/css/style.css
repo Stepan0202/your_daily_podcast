@@ -95,10 +95,11 @@ a:active {
 }
 
 body {
-  font-family: "Montserrat Alternates";
+  font-family: "Times New Roman", Times, serif;
   font-weight: 700;
   font-size: 16px;
   overflow-x: hidden;
+  max-width: 100%;
 }
 
 h1 {
@@ -170,7 +171,7 @@ h3 {
   width: max-content;
   text-transform: uppercase;
   color: #fff;
-  background-color: #000;
+  background-color: rgb(192, 24, 24);
   box-shadow: 3px 3px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
   display: flex;
