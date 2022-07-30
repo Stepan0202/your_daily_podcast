@@ -8,7 +8,6 @@ let moveStep = items[0].getBoundingClientRect().width;
 
 let viewportWidth = document.documentElement.clientWidth;
 let itemsContainerWidth = items[0].getBoundingClientRect().width * items.length;
-console.log(viewportWidth);
 let isRightActive = false;
 let isLeftActive = true;
 

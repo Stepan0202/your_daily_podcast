@@ -5,19 +5,12 @@ const scrolableItems = document.querySelectorAll('.scrolableItem');
 if(scrolableItems.length > 0){
 window.addEventListener('scroll', animateOnScroll);
 function animateOnScroll(params){
-    console.log("began of animateOnScroll");
     for (let index = 0; index < scrolableItems.length; index++) {
         const scrolabelItem = scrolableItems[index];
-        console.log("scrolabelItem: " + scrolabelItem);
         const scrolabelItemHeight = scrolabelItem.offsetHeight;
-        console.log("scrolabelItemHeight: " + scrolabelItemHeight);
         const scrolabelItemPosition = offset(scrolabelItem).top;
-        console.log("scrolabelItemPosition: " + scrolabelItemPosition);
         const scrollStart = 4;
-        console.log("window.innerHeight: " + window.innerHeight);
         let scrollItemPoint = window.innerHeight - scrolabelItemHeight / scrollStart;
-        console.log("ScrollX: " + scrollX);
-        console.log("ScrollY: " + scrollY);
         if (scrolabelItemHeight > window.innerHeight) {
             scrollItemPoint = window.innerHeight - window.innerHeight / scrollStart;
         }
