@@ -364,13 +364,12 @@ h3 {
   padding: 0 4.1379310345%;
 }
 
-.gallerey {
+.gallery {
   display: flex;
   position: relative;
   background-color: #F7EDE8;
   max-width: 100vw;
   overflow: hidden;
-  border: 1px solid red;
   overflow: visible;
 }
 
@@ -381,11 +380,11 @@ h3 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  transition: all 0.1s linear 0s;
+  transition: all 2s ease 0s;
   overflow: visible;
 }
 
-.gallerey__item {
+.gallery__item {
   position: relative;
   display: inline-block;
   margin-left: 20px;
@@ -1111,10 +1110,12 @@ h3 {
   justify-content: center;
   overflow: hidden;
   margin: 0 auto;
+  border: solid black 1px;
 }
 
 .app__app-preview {
   position: relative;
+  border: solid black 1px;
   flex: 0 1 auto;
   z-index: 0;
 }
@@ -1145,6 +1146,7 @@ h3 {
   margin: 0 2%;
   padding: 140px 0;
   justify-self: center;
+  border: solid rgb(115, 255, 0) 1px;
   transform: translateX(7vw);
 }
 
