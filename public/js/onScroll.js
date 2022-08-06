@@ -1,7 +1,6 @@
 const scrolableItems = document.querySelectorAll('.scrolableItem');
 
 
-
 if(scrolableItems.length > 0){
 window.addEventListener('scroll', animateOnScroll);
 function animateOnScroll(params){
