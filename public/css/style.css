@@ -1115,7 +1115,6 @@ h3 {
 
 .app__app-preview {
   position: relative;
-  border: solid black 1px;
   flex: 0 1 auto;
   z-index: 0;
 }
@@ -1146,7 +1145,6 @@ h3 {
   margin: 0 2%;
   padding: 140px 0;
   justify-self: center;
-  border: solid rgb(115, 255, 0) 1px;
   transform: translateX(7vw);
 }
 
